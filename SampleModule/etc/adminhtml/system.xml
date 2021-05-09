@@ -1,0 +1,26 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="mastering" translate="label" sortOrder="10000">
+            <label>Mastering</label>
+        </tab>
+
+        <section id="mastering" showInDefault="1" showInWebsite="0" showInStore="0" sortOrder="10" translate="label">
+            <label>Mastering</label>
+            <tab>mastering</tab>
+            <resource>Mastering_SampleModule::mastering</resource>
+
+            <group id="general" translate="label" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Item creation by schedule</label>
+
+                <field id="enable" translate="label" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0" type="select">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+
+                <field id="cron_expression" translate="label" sortOrder="20" showInDefault="1" showInWebsite="0" showInStore="1" type="text">
+                    <label>Add Item Cron Express</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
