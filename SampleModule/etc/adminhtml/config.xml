@@ -3,7 +3,7 @@
     <default>
         <mastering>
             <general>
-                <enable>0</enable>
+                <enableb>0</enableb>
                 <cron_expression>* * * * *</cron_expression>
             </general>
         </mastering>

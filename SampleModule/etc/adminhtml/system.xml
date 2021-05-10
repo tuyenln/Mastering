@@ -12,8 +12,8 @@
             <group id="general" translate="label" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
                 <label>Item creation by schedule</label>
 
-                <field id="enable" translate="label" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0" type="select">
-                    <label>Enable</label>
+                <field id="enabled" translate="label" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0" type="select">
+                    <label>Enabled</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                 </field>
 
