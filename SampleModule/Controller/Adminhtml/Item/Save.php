@@ -17,7 +17,6 @@ class Save extends \Magento\Backend\App\Action
 
     public function execute()
     {
-
         $this->itemFactory->create()->setData($this->getRequest()->getPostValue()['general'])->save();
 
         return $this->resultRedirectFactory->create()->setPath('mastering/index/index');
